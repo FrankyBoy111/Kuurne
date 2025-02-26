@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Deelnemerslijst</title>
+		
+<style type="text/css">   
+
+.generalDiv{
+width:300px; background-color:LightGrey;text-align:center;
+}
+
+.titleDiv{
+padding-top:10px; padding-bottom:10px; text-align:center; width:100%; font-size:18px; color:White;
+background-color:CadetBlue;font-family: "Comic Sans MS";
+}
+
+.labelDiv{
+padding-top:10px; font-size:14px; text-align:left; margin-left:75px;
+}
+
+.inputDiv{
+padding-top:2px; padding-bottom: 50px;
+}
+.inputBox{
+font-size:16px; width:150px;
+}
+
+.resultDiv{
+text-align:center; font-size:24px; width:50%; margin-left:25%; font-family: "Comic Sans MS";font-weight: bold; height:250px;
+}
+
+.Invisible { display: none; }
+
+</style>
+
+
+</head>
+
+<body>
+
+<div class="generalDiv">
+
+    <div class="titleDiv">
+        Kuurne-Brussel-Kuurne
+    </div>
+
+    <div class="labelDiv">
+        Rugnummer
+    </div>
+
+    <div class="inputDiv">
+      <input type="text" id="RugNummer" class="inputBox" >
+    </div>
+
+    <div id = "resultDiv" class="resultDiv">
+        
+    </div>
+
+    <div class="Invisible" id="RData">
+5-Olav Kooij*6-Edoardo Affini*7-Loe Van Belle*1-Wout van Aert*2-Tiesj Benoot*3-Victor Campenaerts*4-Matteo Jorgenson*11-Jonas Rickaert*12-Simon Dehairs*13-Silvan Dillier*14-Kaden Groves*15-Johan Price-Pejtersen*16-Lars Boven*17-Jasper Philipsen*21-Arnaud Démare*22-Amaury Capiot*23-Jenthe Biermans*24-Donavan Vincent Grondin*25-Luca Mozzato*26-Miles Scotson*27-Florian Sénéchal*31-Matej Mohoric*32-Matevz Govekar*33-Alberto Bruttomesso*34-Andrea Pasqualon*35-Robert Stannard*36-Vlad Van Mechelen*37-Alfred Wright*41-Dylan Teuns*42-Stanislaw Aniolkowski*43-Aimé Degendt*44-Milan Fretin*45-Alexis Renard*46-Piet Allegaert*47-Damien Touzé*51-Oliver Naesen*52-Dries De Bondt*53-Sander De Pestel*54-Stan Dewulf*55-Tord Gudmestad*56-Stefan Bissegger*57-Rasmus Søjberg Pedersen*73-Sven Erik Bystrøm*74-Johan Jacobs*75-Olivier Le Gac*76-Paul Penhoët*77-Clement Russo*71-Lewis Askey*72-Cyril Barthe*81-Biniam Girmay Hailu*82-Dries De Pooter*83-Huub Artz*84-Arne Marit*85-Jonas Rutsch*86-Luca Van Boven*87-Taco van der Hoorn*91-Jasper Stuyven*92-Toms Skujins*93-Jonathan Milan*94-Tim Torn Teutenberg*95-Edward Theuns*96-Mathias Vacek*97-Otto Vergaerde*101-Ivan Garcia Cortina*102-Orluis Alberto Aular Sanabria*103-Jon Barrenetxea Golzarri*104-Davide Cimolai*105-Lorenzo Milesi*106-Manlio Moro*107-Mathias Norsgaard Jørgensen*111-Jordi Meeus*112-Jonas Koch*113-Oier Lazkano*114-Roger Adria Oliveras*115-Jan Tratnik*116-Mick van Dijke*117-Tim van Dijke*121-Tim Merlier*122-Yves Lampaert*123-Pepijn Reinderink*124-Martin Svrcek*125-Dries Van Gestel*126-Bert Van Lerberghe*127-Warre Vangheluwe*131-Dylan Groenewegen*132-Jesse Kramer*133-Robert Donaldson*134-Jelte Krijnsen*136-Elmar Reinders*137-Jasha Sütterlin*141-John Degenkolb*142-Pavel Bittner*143-Alexander Edmondson*144-Nils Eekhoff*145-Sean Flynn*146-Enzo Leijnse*147-Timo Roosen*151-Tim Wellens*152-Rui Filipe Oliveira Alves*153-Rune Herregodts*154-Jhonnatan Manuel Narváez*155-Nils Politt*156-Florian Vermeersch*157-Mikkel Bjerg*161-Davide Ballerini*162-Cees Bol*163-Michele Gazzoli*164-Max Kanter*165-Alessandro Romele*166-Matteo Malucelli*167-Ide Schelling*171-Ethan Vernon*172-Guillaume Boivin*173-Hugo Hofstetter*174-Riley Sheehan*175-Matis Louvel*176-Jake Stewart*177-Michael Schwarzmann*181-Brent Van Moer*182-Cedric Beullens*183-Arjen Livyns*184-Sébastien Grignard*185-Steffen De Schuyteneer*186-Lionel Taminiaux*187-Alec Segaert*191-Giacomo Nizzolo*192-Frederik Frison*193-Emils Liepins*194-Fabio Christen*195-Jannik Steimle*196-Rory Townsend*197-Nickolas Zukowsky*201-Tom Crabbe*202-Siebe Deweirdt*203-Ward Vanhoof*204-Jules Hesters*205-Milan Lanhove*206-Noah Vandenbranden*207-Yentl Vandevelde*61-Kasper Asgreen*62-Vincenzo Albanese*63-Owain Doull*64-Mikkel Froelich Honoré*65-Madis Mihkels*66-Michael Valgren Andersen*67-Marijn van den Berg*211-Matteo Trentin*212-Petr Kelemen*213-Alexander Krieger*214-Fabian Lienhard*215-Marius Mayrhofer*216-Rick Pluimers*217-Robin Froidevaux*221-Joren Bloem*222-Lukas Kubis*223-Andreas Stokbro Nielsen*224-Hartthijs de Vries*225-Sebastian Nielsen*226-Abram Stockman*227-Tomas Kopecky*231-Alexander Kristoff*232-Jonas Abrahamsen*233-William Blume Levy*234-Erik Nordsaeter Resell*235-Anders Skaarseth*236-Rasmus Tiller*237-Søren Wærenskjold*241-Loic Vliegen*242-Cériel Desal*243-Michiel Lambrecht*244-Jens Reynders*245-Leander Van Hautegem*246-Kenneth Van Rooy*247-Pierre Barbier*
+
+    </div>
+
+</div>
+
+</body>
+
+
+<script type="text/javascript">
+
+// Global anonymous function starts here.
+(function(){ 
+
+AddSomeEventListeners();
+
+var myGlobalArray = GetGlobalArray();
+//alert(document.getElementById("RData").innerHTML) ;
+
+
+/***
+* Deze functie voegt de nodige EventListeners toe.
+*/
+function AddSomeEventListeners(){
+    document.getElementById("RugNummer").addEventListener ("input", UpdateResult);
+}
+
+
+/***
+* Deze functie controleert of de ingevoerde waarden geldig zijn.
+* Die waarden moeten numeriek zijn en tussen bepaalde grenzen liggen.
+*/
+function InputOK(){
+    var myValue;
+
+    myValue = document.getElementById("RugNummer").value;
+    if( !IsValidValue(myValue,1,300 )){
+        return "Ongeldig Rugnummer";
+    }
+
+    return "";
+}
+
+
+/***
+* Deze Udf controleert of de doorgegeven parameter een geldige waarde heeft die gelegen
+* is tussen een minimum en maximum waarde, die ook als parameters worden doorgegeven.
+*/
+function IsValidValue(xValue, xMin, xMax){
+    if(xValue.length === 0) {
+        return true;   
+    }
+    if(isNaN(xValue)) {
+        return false;   
+    }
+    if(xValue < xMin) {
+        return false;   
+    }
+    if(xValue > xMax) {
+        return false;   
+    }
+    return true;
+}
+
+
+/***
+* Deze functie geeft de globale array met alle rugnummers en deelnemers.
+* arr2 is geen 2-dimensionele array maar wel een "nested" array.
+*/
+function GetGlobalArray(){
+    var myString, arr1, arr2, arri, i ;
+    
+    // String met de inhoud van de deelnemerslijst.
+    myString = document.getElementById("RData").innerHTML;
+
+    // 1-dimensionele Array met rugnummer en naam per element.
+    arr1 = myString.split("*");
+
+    // "Nested" Array met rugnummer in 1ste element en naam in 2de element.
+    arr2 = [];
+
+    for ( i = 0; i < arr1.length; i++) {
+
+        // "Nested" Array met rugnummer in 1ste element en naam in 2de element.
+        arri = arr1[i].split("-");
+
+        // Een nieuwe regel na de <Div> tag geeft een extra \n voor het eerste rugnummer.
+        // Dat willen we liefst niet.
+
+
+        //let bevatNewline = tekst.includes('\n');
+        if ( arri[0].includes('\n') ){
+        
+            arri[0] = arri[0].replace('\n', '');
+        }
+
+        
+        arr2.push(arri);
+    }
+
+    return arr2;
+}
+
+
+/***
+* Deze functie geeft de naam terug op basis van het rugnummer.
+*/
+function GetRiderName( nRugnummer ){
+    var i, l ;
+
+    l = nRugnummer.length;
+
+    for ( i = 0; i < myGlobalArray.length; i++) {
+
+        if (myGlobalArray[i][0] === nRugnummer){
+        
+            return myGlobalArray[i][1];
+        }
+    }
+
+    return "";
+}
+
+/***
+* Deze functie actualiseert het resultaat van de Opzoeking.
+*/
+function UpdateResult(){
+    var cInputError, xInput, myDiv, xOutput ;
+
+    cInputError = InputOK() ;
+    if (cInputError !== ""){
+        alert(cInputError) ;
+        ClearInput() ;
+        ClearResult() ;
+        return ;
+    }
+
+    xInput = document.getElementById("RugNummer").value
+    
+    if (xInput === ""){
+        ClearResult() ;
+        return ;
+    }
+
+
+    xOutput = GetRiderName( xInput ) ;
+
+    myDiv = document.getElementById("resultDiv") ;
+    myDiv.innerHTML = xOutput ;
+    myDiv.style.color = "OrangeRed" ;
+
+}
+
+
+/***
+* Deze functie maakt het invoerveld leeg.
+*/
+function ClearInput(){
+    var myDiv;
+    myDiv = document.getElementById("RugNummer") ;
+    if(myDiv.innerHTML !== ""){
+        myDiv.innerHTML = "";
+    }
+}
+
+
+/***
+* Deze functie maakt het resultaat leeg.
+*/
+function ClearResult(){
+    var myDiv;
+    myDiv = document.getElementById("resultDiv") ;
+    if(myDiv.innerHTML !== ""){
+        myDiv.innerHTML = "";
+    }
+}
+
+})()  // End of Global anonymous function.
+
+</script>
+</html>
